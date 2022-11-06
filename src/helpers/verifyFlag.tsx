@@ -8,8 +8,6 @@ export const verifyFlag = (ccn: string) => {
   let regexpVisa = new RegExp(visa);
   let regexpMaster = new RegExp(mastercard);
   let regexpAmerican = new RegExp(american);
-  let regexpElo = new RegExp(elo);
-  const test = regexpVisa.test(ccn);
 
   if (regexpVisa.test(ccn)) {
     return <img alt="visa" src="visa.png" className="flag-icon" />;
@@ -17,8 +15,6 @@ export const verifyFlag = (ccn: string) => {
     return <img alt="mastercard" src="mastercard.png" className="flag-icon" />;
   } else if (regexpAmerican.test(ccn)) {
     return <img alt="american" src="american.png" className="flag-icon" />;
-  } else if (regexpElo.test(ccn)) {
-    return <img alt="elo" src="elo.png" className="flag-icon" />;
   } else {
     return null;
   }

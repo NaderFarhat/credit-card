@@ -65,17 +65,23 @@ body{
 .card-bottom__name {
   display: flex;
   align-items: flex-end;
-  height: 35%;
+  position: absolute;
+  bottom: 65px;
+  left: 36px;
 }
 
 .card-bottom__number {
   display: flex;
   align-items: end;
+  position: absolute;
+  bottom: 40px;
+  left: 36px;
 }
 
 .card-bottom__val {
-  display: flex;
-  justify-content: flex-end;
+  position: absolute;
+  right: 60px;
+  bottom: 30px;
 }
 
 .card-bottom {
@@ -110,6 +116,7 @@ body{
 }
 
 .exp-wrapper:after {
+
   content: '/';
   position: absolute;
   left: 50%;
@@ -176,7 +183,6 @@ input[type=number] {
   height: 100%;
   align-items: center;
   color: gray;
-  font-weight: bolder;
 }
 
 .card-back {
