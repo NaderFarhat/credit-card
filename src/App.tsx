@@ -35,6 +35,7 @@ function App() {
               id="ccn"
               type="tel"
               className="input"
+              data-testid="input-cc"
               inputMode="numeric"
               pattern="[0-9\s]{13,19}"
               autoComplete="cc-number"
@@ -57,6 +58,7 @@ function App() {
               onBlur={() => {
                 flip();
               }}
+              data-testid="input-pin"
               onChange={(e) => setPin(e?.target?.value)}
               className="input"
             />
@@ -70,6 +72,7 @@ function App() {
               type="text"
               className="input"
               onChange={(e) => setName(e?.target?.value)}
+              maxLength={36}
             />
           </div>
           <div style={{ float: "left" }}>
